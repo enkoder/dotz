@@ -2,7 +2,7 @@
 
 #!/bin/sh
 sudo apt install ripgrep
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh -s -- --yes
 
 {{ else if eq .chezmoi.os "darwin" -}}
 
