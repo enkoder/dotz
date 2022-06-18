@@ -46,7 +46,7 @@ set autoread
 
 " Mmmmm zenburn
 set background=dark
-colo zenburn
+"colo zenburn
 
 " Mouse yo
 set mouse=a
