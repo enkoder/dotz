@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR='vim'
+export PATH=$HOME/bin:$HOME/.bin:$PATH
+
 
 zstyle ':omz:update' mode disabled  # disable automatic updates
 
@@ -12,8 +14,8 @@ plugins=(
 
 # ssh
 zstyle :omz:plugins:ssh-agent agent-forwarding yes
-zstyle :omz:plugins:ssh-agent identities id_rsa 
- 
+zstyle :omz:plugins:ssh-agent identities id_rsa
+
 source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
