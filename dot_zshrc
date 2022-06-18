@@ -10,6 +10,7 @@ plugins=(
   git
   ssh-agent
   ripgrep
+  gitfast
 )
 
 # ssh
@@ -17,5 +18,11 @@ zstyle :omz:plugins:ssh-agent agent-forwarding yes
 zstyle :omz:plugins:ssh-agent identities id_rsa
 
 source $ZSH/oh-my-zsh.sh
+
+
+# aliases
+alias cm="chezmoi "
+alias cmu="chezmoi --force update"
+
 
 eval "$(starship init zsh)"
