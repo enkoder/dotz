@@ -21,8 +21,8 @@ source $ZSH/oh-my-zsh.sh
 
 
 # aliases
-alias cm="chezmoi "
-alias cmu="chezmoi --force update"
+alias -g cm="chezmoi "
+alias -g cmu="chezmoi --force update"
 
 
 eval "$(starship init zsh)"
