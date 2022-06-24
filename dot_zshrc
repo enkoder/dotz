@@ -25,6 +25,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Python wrapper
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source ~/.local/bin/virtualenvwrapper.sh
 
 eval "$(starship init zsh)"
