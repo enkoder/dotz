@@ -1,8 +1,12 @@
 {{ if eq .chezmoi.os "linux" -}}
 
 #!/bin/sh
+sudo apt update
 sudo apt install ripgrep
+sudo apt install python3
 curl -sS https://starship.rs/install.sh | sh -s -- --yes
+pip install --user virtualenvwrapper
+
 
 {{ else if eq .chezmoi.os "darwin" -}}
 
