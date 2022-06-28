@@ -9,7 +9,9 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 
 plugins=(
   git
+  {{ if ne .chezmoi.hostname "workspace" }}
   ssh-agent
+  {{ end }}
   ripgrep
   gitfast
   aliases
