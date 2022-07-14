@@ -2,10 +2,19 @@
 
 #!/bin/sh
 sudo apt update
-sudo apt install ripgrep
-sudo apt install python3 python3-pip curl
+sudo apt install \
+    python3.7 \
+    python3.7-pip \
+    curl \
+    zsh \
+    pass \
+    jq 
 curl -sS https://starship.rs/install.sh | sh -s -- --yes
 pip3 install --user virtualenvwrapper
+
+#ripgrep
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+sudo dpkg -i ripgrep_13.0.0_amd64.deb
 
 {{ else if eq .chezmoi.os "darwin" -}}
 
